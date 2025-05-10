@@ -1,0 +1,295 @@
+main .characters-section{
+    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+    padding-top: 50px;
+}
+
+main .characters-section .character-and-gellary:not(:first-child){
+    margin-top: 100px;
+    border-top: 1px solid #ffffff14;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+main .characters-section .character{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .contaner-subimg{
+    display: inline-block;
+    background: linear-gradient(180deg,#3f4064,#9c65d7);
+    border-radius: 0 16px 0 0;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .contaner-subimg img{
+    display: block;
+    height: 64px; width: 55px;
+    
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .name-and-element{
+    display: inline-block;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .name-and-element .character-name{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    word-break: break-word;
+    color: white;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .name-and-element .element{
+    height: 24px; width: 24px;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path .rarity{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    box-sizing: border-box;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path .rarity img{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path .path{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding-left: 8px;
+    margin-left: 8px;
+    border-left: 1px solid rgba(88, 88, 88, 0.753);
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path .path img{
+    height: 20px;
+    width: 20px;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img .short-info .rarity-and-path .path span{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 4px;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+}
+
+main .characters-section .character .info-with-buttons .character-info .short-info-and-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 17px;
+}
+
+main .characters-section .character .info-with-buttons .character-info .character-tegs{
+    display: flex;
+    flex-direction: row;
+}
+
+main .characters-section .character .info-with-buttons .character-info .character-tegs .teg{
+    color: #f29e38;
+    border-radius: 0 12px 0 0;
+    border: 1px solid transparent;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 0 8px;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    background: rgba(0,0,0,.45);
+    display: inline-block;
+    cursor: pointer;
+}
+
+main .characters-section .character .info-with-buttons .character-info .character-tegs .teg:hover{
+    background: rgba(242,158,56,.08);
+    border: 1px solid #f29e38;
+}
+
+main .characters-section .character .info-with-buttons .character-info .character-discription{
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+main .characters-section .character .info-with-buttons .character-info{
+    display: flex;
+    flex-direction: column;
+}
+
+main .characters-section .character .info-with-buttons .character-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+main .characters-section .character .info-with-buttons .character-buttons .character-button{
+    width: 180px; height: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 12px 0;
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+    outline-offset: -3px;
+}
+
+main .characters-section .character .info-with-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 120px
+}
+
+main .characters-section .character .character-main-img{
+    width: 640px; height: auto;
+}
+
+main .characters-section .character-and-gellary .gellary{
+    max-width: 1200px;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    background: #2a2a5473;
+    border: 1px solid #ffffff14;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+main .characters-section .character-and-gellary .gellary .gellary-menu .title,
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu .title{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    padding-left: 15px;
+}
+
+main .characters-section .character-and-gellary .gellary .gellary-menu,
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff14;
+}
+
+main .characters-section .character-and-gellary .gellary .gellary-menu .exit,
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu .exit{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    padding-right: 15px;
+}
+
+main .characters-section .character-and-gellary .gellary .gallery-imgs{
+    padding: 20px;
+}
+
+main .characters-section .character-and-gellary .gellary .gallery-imgs img{
+    height: 120px; width: auto;
+}
+
+main .characters-section .character-and-gellary .story-contaner{
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+}
+
+main .characters-section .character-and-gellary .story-contaner .background-story{
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: #2a2a5473;
+    backdrop-filter: blur(20px);
+    z-index: 9999;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story {
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin: 0 auto; 
+    overflow: auto;
+    max-width: 788px;
+    background: #292d34;
+    z-index: 10000;
+    padding: 30px;
+    padding-top: 70px;
+    scrollbar-color: #ffffff1f #00000000;
+    scrollbar-width: thin;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu{
+    padding-bottom: 30px;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu .title{
+    font-size: 32px;
+    line-height: 42px;
+    color: #dbc291;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story-menu .exit{
+    font-size: 32px;
+    line-height: 42px;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story{
+    padding: 20px;
+    color: #ffffff73;
+    line-height: 1.7em;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story:not(:last-child){
+    border-bottom: 1px solid #ffffff14;
+}
+
+main .characters-section .character-and-gellary .story-contaner .character-story .story .story-titel{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:1095px) {
+    main .characters-section .character{
+        flex-direction: column-reverse;
+    }
+    main .characters-section .character .info-with-buttons{
+        gap: 20px;
+    }
+    main .characters-section .character-and-gellary{
+        padding: 20px;
+    }
+    main .characters-section .character-and-gellary .story-contaner .character-story{
+        
+    }
+}

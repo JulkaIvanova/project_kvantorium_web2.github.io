@@ -1,0 +1,250 @@
+main .locations{
+    padding-top: 100px;
+}
+
+main .locations .locations-main{
+    position: relative;
+}
+
+main .locations .locations-main .background{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    /* z-index: -1; */
+    max-width: 100%;
+}
+
+main .locations .locations-main .worlds{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 300px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+main .locations .locations-main .worlds a img{
+    height: 100px;
+    transition: all 0.5s ease-in-out;
+    transform-origin: 50% 50%;
+    display: block;
+}
+
+main .locations .locations-main .worlds a:nth-child(1){
+    transform: translateY(-120px);
+}
+
+main .locations .locations-main .worlds a:nth-child(1) img{
+    height: 170px;
+}
+
+main .locations .locations-main .worlds a:nth-child(2){
+    transform: translateY(120px);
+}
+
+main .locations .locations-main .worlds a:nth-child(3){
+    transform: translateY(-120px);
+}
+
+main .locations .locations-main .worlds a:nth-child(4){
+    transform: translateY(120px);
+}
+
+main .locations .locations-main .worlds a:nth-child(4) img{
+    height: 170px;
+}
+
+main .locations .locations-main .worlds a:nth-child(5){
+    transform: translateY(-120px);
+}
+
+main .locations .locations-main .worlds a:nth-child(5){
+    height: 70px;
+}
+
+main .locations .locations-main .worlds a img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+main .locations .locations-wrappwer{
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;;
+}
+
+main .locations .locations-wrappwer .location{
+    padding: 100px 20px;
+}
+
+main .locations .locations-wrappwer .location .location-info{
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}   
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .icon-and-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .icon-and-name img{
+    width: 64px; height: 64px;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .icon-and-name h2{
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .tegs{
+    display: flex;
+    flex-direction: row;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .tegs div{
+    color: #f29e38;
+    border-radius: 0 12px 0 0;
+    border: 1px solid transparent;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 0 8px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.45);
+    display: inline-block;
+    cursor: pointer;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .tegs div:hover{
+    background: rgba(242,158,56,.08);
+    border: 1px solid #f29e38;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .discription{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .locations .locations-wrappwer .location .location-info .location-text-info .discription p{
+    color: #ffffffa6;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+main .locations .locations-wrappwer .location .location-info .map{
+    width: 640px; height: 640px;
+    display: inline-block;
+}
+
+main .locations .locations-wrappwer .location .gellary{
+    max-width: 1200px;
+    box-sizing: border-box;
+    backdrop-filter: blur(50px);
+    background: #2a2a5473;
+    border: 1px solid #ffffff14;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+main .locations .locations-wrappwer .location .gellary h2{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff14;
+}
+
+main .locations .locations-wrappwer .location .gellary .gellary-imgs{
+    padding: 20px;
+    padding-top: 30px;
+}
+
+main .locations .locations-wrappwer .location .gellary .gellary-imgs img{
+    height: 120px; width: auto;
+    display: inline-block;
+}
+
+main .locations .locations-wrappwer .location{
+    border-bottom: 1px solid #373737;
+}
+
+@media (max-width: 1200px){
+    main .locations .locations-wrappwer .location .location-info{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 1000px){
+    main .locations .locations-main .worlds{
+        flex-direction: column;
+        padding: 100px 20px;
+        min-height: 1000px;
+    }
+    main .locations .locations-main .worlds a:nth-child(1){
+        transform: translateX(-120px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(2){
+        transform: translateX(120px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(3){
+        transform: translateX(-120px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(4){
+        transform: translateX(120px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(5){
+        transform: translateX(-120px);
+    }
+}
+
+@media (max-width: 529px){
+    main .locations .locations-main .worlds a:nth-child(1){
+        transform: translateX(-60px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(2){
+        transform: translateX(60px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(3){
+        transform: translateX(-60px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(4){
+        transform: translateX(60px);
+    }
+
+    main .locations .locations-main .worlds a:nth-child(5){
+        transform: translateX(-60px);
+    }
+}

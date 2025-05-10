@@ -1,0 +1,395 @@
+main .Light-Cones-section .Light-Cones-main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+main .Light-Cones-section{
+    padding-top: 100px;
+}
+
+main .Light-Cones-section .background-img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    /* z-index: -1; */
+    max-width: 100%;
+}
+
+main .Light-Cones-section .main-title{
+    position: relative;
+    z-index: 100;
+    display: block;
+    font-family: Anton;
+    font-size: 5em;
+    z-index: 2;
+    text-align: center;
+    background: linear-gradient(to right, #85bfee, #445da7, #e1ca9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    margin-right: 200px;
+    max-width: 50%;
+}
+
+main .Light-Cones-section .wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 120px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item{
+    position: relative;
+    background-color: #282828;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: 1px solid #373737;
+    outline-offset: -5px;
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .path-big{
+    width: 83.2px; height: 83.2px;
+    position: absolute;
+    top: 0; right: 0;
+    opacity: .08;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-img-div{
+    position: relative;
+    padding: 9px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-img-div .light-cones-img{
+    position: relative;
+    z-index: 3;
+    width: 83.2px; height: 124.8px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-img-div .light-cones-img-wrapper{
+    position: absolute;
+    z-index: 2;
+    width: 91.52px; height: 133.12px;
+    top:0; left: 0;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .light-cones-name{
+    color: #dbc291;
+
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .path-and-path-name{
+    display: flex;
+    flex-direction: row;
+}   
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .path-and-path-name .path-litle{
+    width: 16px; height: 16px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .path-and-path-name p{
+    color: #ffffff73;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 4px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .rarity{
+    display: flex;
+    flex-direction: row;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .rarity img{
+    width: 12.5px; height: 12.5px; 
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .characteristics{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .characteristics div{
+    height: 18px;
+    width: 82px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .characteristics div img{
+    height: 12.5px; width: 12.5px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .characteristics div span{
+    color: #ffffff73;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info .discription{
+    color: #ffffff73;
+    font-size: 12px;
+    line-height: 16px;
+    border-top: #373737 1px solid;
+    padding-top: 2px;
+    margin-top: 8px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info .light-cones-info{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item .light-cones-wraper-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel{
+    position: relative;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel a:nth-child(1){
+    position: relative;
+    height: 345.8px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel a:nth-child(2){
+    position: absolute;
+    top: 45px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel a:nth-child(3){
+    position: absolute;
+    top: 90px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel a:nth-child(4){
+    position: absolute;
+    top: 135px;
+}
+main .Light-Cones-section .wrapper .light-cones-carousel a:nth-child(5){
+    position: absolute;
+    top: 180px;
+}
+
+main .Light-Cones-section .wrapper .light-cones-carousel .carousel-item:hover{
+    transform: translateY(-130px);
+}
+
+main .Light-Cones-section .Light-Coneses{
+    font-family: Tahoma,Helvetica,Arial,sans-serif !important;
+    padding-top: 100px;
+}
+main .Light-Cones-section .Light-Coneses .light-cones .conuse-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones:not(:first-child){
+    /* margin-top: 100px; */
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    padding-left: 15px; padding-right: 15px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .light-cones-img-div{
+    position: relative;
+    padding: 14px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .light-cones-img-div .light-cones-img{
+    position: relative;
+    z-index: 2;
+    width: 140px; height: 210px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .light-cones-img-div .light-cones-img-wrapper{
+    position: absolute;
+    z-index: 1;
+    top: 0; left: 0;
+    width: 154px; height: 224px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription{
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription .light-cones-name{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    color: white;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription .tegs{
+    display: flex;
+    flex-direction: row;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription .tegs div{
+    color: #f29e38;
+    border-radius: 0 12px 0 0;
+    border: 1px solid transparent;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 0 8px;
+    font-weight: 400;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.45);
+    display: inline-block;
+    cursor: pointer;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription .tegs div:hover{
+    background: rgba(242,158,56,.08);
+    border: 1px solid #f29e38;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .discription p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffffa6;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info{
+    background: #292d34;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info h2{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    border-bottom: 1px solid #373737;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .name-div,
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .path-div{
+    width: 50%;
+    display: inline-block;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .name-div span,
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .path-div span,
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .feature-div .feature-name{
+    display: inline-block;
+    color: #ffffff40;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .name-div p,
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .path-div p,
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .feature-div p{
+    display: inline-block;
+    color: #ffffffd9;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .feature-div p span{
+    color: rgb(255, 200, 112);
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics div{
+    width: 25%;
+    background-color: #1e1e1e;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics div img{
+    height: 18.5px; width: 18.5px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics div span{
+    line-height: 16px;
+    font-size: 12px;
+    color: #ffffffd9;
+}
+
+@media (max-width: 1280px) {
+    main .Light-Cones-section .wrapper{
+        flex-direction: column;
+        padding: 40px 0;
+        
+    }
+    main .Light-Cones-section .main-title{
+        margin-right: 0;
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 750px){
+    main .Light-Cones-section .main-title{
+        margin-right: 0;
+        margin-bottom: 130px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px){
+    main .Light-Cones-section .Light-Coneses .light-cones .conuse-wrapper{
+        flex-direction: column;
+    }
+    main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics div{
+        width: 100%;
+    }
+    main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .characteristics{
+        gap: 10px;
+        flex-direction: column;
+    }
+    main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .name-div,
+    main .Light-Cones-section .Light-Coneses .light-cones .Basic-Info .name-and-path .path-div{
+        width: 100%;
+    }
+}

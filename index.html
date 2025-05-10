@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://marksheet.io/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/characters.css">
+    <link rel="stylesheet" href="./css/light_cones.css">
+    <link rel="stylesheet" href="./css/locations.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai: Star Rail</title>
+</head>
+<body>
+    <header>
+        <div class="logo-contaner">
+            <div class="logo-and-text">
+                <img class="logo" src="./img/logo.png">
+                <div class="text-and-btn">
+                    <span class="logo-text">Honkai: Star Rail</span>
+                    <button class="mobile-menu-btn">☰</button>
+                </div>
+            </div>
+            
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <a href="#main-section"><li>main</li></a>
+                    <a href="#characters-section"><li>characters</li></a>
+                    <a href="#Light-Cones-section"><li>Light Cones</li></a>
+                    <a href="#locations"><li>Locations</li></a>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </header>
+    <script>
+        function handleMenuVisibility() {
+            const navMenu = document.getElementById('nav-menu');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (window.innerWidth > 1000) {
+                navMenu.style.display = "block";
+            } else {
+                navMenu.style.display = "none";
+            }
+        }
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            if (document.getElementById('nav-menu').style.display != "block"){
+                document.getElementById('nav-menu').style.display = "block";
+            } else {
+                document.getElementById('nav-menu').style.display = "none";
+            }
+            
+        });
+        window.addEventListener('resize', handleMenuVisibility);
+    </script>
+    <main>
+        <section class="main-section" id="main-section">
+            <img class="background-img" src="./img/background2.webp">
+            <div class="content-wrapper">
+                <div class="carousel">
+                    <a href="#March_7th" class="carousel-item">
+                        <img class="carousel-image" src="./img/hero_9.jpg" alt="Март 7">
+                        <div class="character-name">March 7th</div>
+                    </a>
+                    <a href="#Himeko" class="carousel-item">
+                        <img class="carousel-image" src="./img/hero_10.jpg" alt="Химеко">
+                        <div class="character-name">Himeko</div>
+                    </a>
+                    <a href="#Trailblazer" class="carousel-item">
+                        <img class="carousel-image" src="./img/hero_3.jpg" alt="Первопроходец">
+                        <div class="character-name">Trailblazer</div>
+                    </a>
+                    <a href="#Dan_Heng" class="carousel-item">
+                        <img class="carousel-image" src="./img/hero_8.jpg" alt="Дань Хэн">
+                        <div class="character-name">Dan Heng</div>
+                    </a>
+                    <a href="#Welt" class="carousel-item">
+                        <img class="carousel-image" src="./img/hero_11.jpg" alt="Вельт">
+                        <div class="character-name">Welt</div>
+                    </a>
+                </div>
+                
+                <h1 class="main-title">Take a journey on the Astral Express</h1>
+            </div>
+        </section>
+        <section id="characters-section" class="characters-section">
+            <div data-scrol="0" class="character-and-gellary">
+                <div id="March_7th" class="character">
+                    <div class="info-with-buttons">
+                        <div class="character-info">
+                            <div class="short-info-and-img">
+                                <div class="contaner-subimg">
+                                    <img src="./img/march7th_subImg.webp">
+                                </div>
+                                <div class="short-info">
+                                    <div class="name-and-element">
+                                        <h2 class="character-name">March 7th</h2>
+                                        <img class="element" src="./img/krio.png">   
+                                    </div>
+                                    <div class="rarity-and-path">
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                        </div>
+                                        <div class="path">
+                                            <img src="./img/preservation.png">
+                                            <span class="name-of-path">The Preservation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-tegs">
+                                <div class="teg">Ice</div>
+                                <div class="teg">Astral Express</div>
+                                <div class="teg">The Preservation</div>
+                                <div class="teg">4-Star</div>
+                            </div>
+                            <div class="character-discription">
+                                A girl who once slumbered in eternal ice and knows nothing about her past.
+                                To find out the truth about her origins, she decided to travel with the Astral Express.
+                                As of right now, she has prepared about 67 different versions of her life story for herself.
+                            </div>
+                        </div>
+                        <div class="character-buttons">
+                            <button id="story-button" class="character-button">Story</button>
+                            <a href="#gellaryMarch_7th"><button id="gallery-button" class="character-button">Gallery</button></a>
+                        </div>
+                    </div>
+                    <img class="character-main-img" src="./img/march7th_mainImg.webp">
+                </div>
+                <div id="gellaryMarch_7th" class="gellary" hidden>
+                    <div class="gellary-menu">
+                        <h2 class="title">Gallery</h2>
+                        <i id="closeGallery" class="bi bi-x-lg exit"></i>
+                    </div>
+                     <div class="gallery-imgs">
+                        <img id="gellary-img" src="./img/march7th_mainImg.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/march7th_gallery.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/March_7th_gallery2.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/March_7th_gallery3.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/march7th_gallery4.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/march7th_gallery5.webp" alt="" srcset="">
+                     </div>
+                </div>
+                <div class="story-contaner" hidden>
+                    <div class="background-story"></div>
+                    <div class="character-story">
+                        <div class="story-menu">
+                            <h2 class="title">March 7th - Story</h2>
+                            <i id="closeStory" class="bi bi-x-lg exit"></i>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Details</h3>
+                            <p class="story-text">
+                                A spirited and quirky young girl who is into all the things girls her age are interested in, such as taking photos.
+                                She was awakened from a piece of drifting eternal ice, only to find that she knows nothing about herself or her past. Though initially feeling dejected, she decided to name herself after the date of her rebirth.
+                                And thus, on that day, March 7th was born.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part I</h3>
+                            <p class="story-text">
+                                Why does March 7th take photos?
+                                "First of all, girls like me should like this kind of pastime."
+                                "Besides, I won't forget anything that I keep a photo of."
+                                What has March 7th come to learn about photography?
+                                "Number one, when taking pictures of terrible cuisines, all the details must be clearly visible on the pictures because 'Taking pictures of food is equal to eating them. Every detail matters.'"
+                                "Number two, as long as you take a picture with your eyes closed, you will be able to capture an expression of your subject with their eyes closed."
+                                Why is March 7th always wearing her camera?
+                                "Because if anyone ever seals me away in ice again, at least I'll have my camera with me!"
+                                So why doesn't March 7th just use the camera on her phone?
+                                "Oh yeah, why not — hang on, it's because of that sense of formality!"
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part II</h3>
+                            <p class="story-text">
+                                March 7th's ability is "Six-Phased Ice", but she has always insisted that it is not ice but some kind of condensed crystal.
+                                "Come on, ice can't be this beautiful."
+                                The bows and arrows March 7th uses in battle are also made of the Six-Phased Ice, but she is not satisfied with the fact that her weapon is a bow.
+                                "Great warriors never use bows!"
+                                "Besides, if I use my ice arrow to attack my ice shield, nothing will happen at all!"
+                                March 7th has also worked hard to practice a unique skill called "Star Crazing: Glass Greatsword," but she never succeeded.
+                                "March, judging by the name, it should be a greatsword, right?"
+                                "Well, but it doesn't feel as good as an ice sculpture... smash."
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part III</h3>
+                            <p class="story-text">
+                                Compared to Pom-Pom the conductor, Himeko the pilot, Dan Heng the guard, and Welt the jack-of-all-trades, even March 7th has a hard time explaining her role aboard the Express despite calling herself a "warrior".
+                                But March 7th's every move affects the crew's course of action all the time.
+                                "Passenger March 7th slipped and fell..."
+                                "March, watch out for the galena ball above your head."
+                                "March, have you taken pictures of the sights over there?"
+                                "I believe March. If she said it's not delicious, then it's truly not delectable."
+                                Rather than calling March 7th someone who constantly worries people, it would be better to say that she works her way into people's hearts.
+                                March 7th, of course, is oblivious to this, and is struggling to think up the right role for Trailblazer.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part IV</h3>
+                            <p class="story-text">
+                                For March 7th, who has been drifting in space, the situation in which she awoke isn't too bad.
+                                She woke up on a passing train, and the people on the train looked friendly.
+                                The only problem is that even though she has a reasonable understanding of what's going on around her, she still doesn't know anything about herself.
+                                "Who am I? Where do I come from..."
+                                March 7th looks at herself in the mirror, imagining dozens of potential past lives for herself as she tries on the various outfits that Himeko had assembled for her.
+                                But she can't be sure what her past was like, and what kind of past a girl like her should have...
+                                The only thing March 7th can choose to be is her current self, and the only thing she can look forward to is the future.
+                                She is both frightened and glad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-scrol="700" class="character-and-gellary">
+                <div id="Himeko" class="character">
+                    <div class="info-with-buttons">
+                        <div class="character-info">
+                            <div class="short-info-and-img">
+                                <div style="background: linear-gradient(180deg,#a35d55,#d0aa6e);" class="contaner-subimg">
+                                    <img src="./img/Himeko_subImg.webp">
+                                </div>
+                                <div class="short-info">
+                                    <div class="name-and-element">
+                                        <h2 class="character-name">Himeko</h2>
+                                        <img class="element" src="./img/fire.png">   
+                                    </div>
+                                    <div class="rarity-and-path">
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                        </div>
+                                        <div class="path">
+                                            <img src="./img/erudition.png">
+                                            <span class="name-of-path">The Erudition</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-tegs">
+                                <div class="teg">Fire</div>
+                                <div class="teg">Astral Express</div>
+                                <div class="teg">The Erudition</div>
+                                <div class="teg">5-Star</div>
+                            </div>
+                            <div class="character-discription">
+                                The one who repaired the Astral Express.
+                                To witness the vast starry sky, she decided to travel with the Astral Express.
+                                Her hobby is brewing hand-made coffee.
+                            </div>
+                        </div>
+                        <div class="character-buttons">
+                            <button id="story-button" class="character-button">Story</button>
+                            <a href="#gellaryHimeko"><button id="gallery-button" class="character-button">Gallery</button></a>
+                        </div>
+                    </div>
+                    <img class="character-main-img" src="./img/Himeko_mainImg.webp">
+                </div>
+                <div id="gellaryHimeko" class="gellary" hidden>
+                    <div class="gellary-menu">
+                        <h2 class="title">Gallery</h2>
+                        <i id="closeGallery" class="bi bi-x-lg exit"></i>
+                    </div>
+                     <div class="gallery-imgs">
+                        <img id="gellary-img" src="./img/Himeko_mainImg.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Himeko_gallery2.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Himeko_gallery3.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Himeko_gallery4.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Himeko_gallery5.webp" alt="" srcset="">
+                     </div>
+                </div>
+                <div class="story-contaner" hidden>
+                    <div class="background-story"></div>
+                    <div class="character-story">
+                        <div class="story-menu">
+                            <h2 class="title">Himeko - Story</h2>
+                            <i id="closeStory" class="bi bi-x-lg exit"></i>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Details</h3>
+                            <p class="story-text">
+                                An adventurous scientist who encountered the Astral Express as a young woman when it got stranded in her homeworld.
+                                Years later, when Himeko finally repairs the Express and begins her journey into the stars, she realized that this is only the beginning. On her journey to trailblaze new worlds, she would need many more companions...
+                                And while they may have different destinations, they all gaze at the same starry sky.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part I</h3>
+                            <p class="story-text">
+                                The girl is lost.
+                                She can't remember when she became lost. She just walked and walked, on and on into the dark night, chasing the sun and the moon, over and over again — until she falls.
+                                She remembers what she looked like as a college freshman, remembers her chosen major — interstellar travel dynamics — and now she's lying face down in the mud.
+                                She looks up to the stars, and just then sees meteors streaming down: one, two, three... And then more, smaller ones, flickering and flashing ever so finely before a magnificent blaze tore open the night.
+                                Her limbs drag her forward, leading her on to where the land meets the ocean. At the shoreline, the waters jostle against her like how the tide treats that stranded Express, alone and lost.
+                                She walks in and see the scenery outside beginning to change. The Express shows her a myriad of magnificent worlds. They are faraway, beyond her homeworld, yet also close enough to be a simple train ride.
+                                She tries to repair the Express. It starts up only briefly, but it is enough to skid across the sky of her home. She immediate sees the path home. From that altitude, the journey is so short, and even the ocean of her homeworld appears so insignificant.
+                                It asked her whether she'd like to travel together. She wonders what kind of journey that would be.
+                                "A journey to the beginning."
+                                "Let's go then." Without hesitation, the girl replied, "Just as you brought me home, so would I take you home, too."
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part II</h3>
+                            <p class="story-text">
+                                This suitcase is her treasure trove. Previously, she'd filled it with all kinds of train repair tools to fix up the Express. But now, it's packed with a molecular saw, an escaped satellite, and countless other contraptions — the embodiment of her whims and the proof of her resolute will.
+                                No travel companion is more faithful to her than this suitcase. Passengers come and go on the Express, and perhaps not even "the conductor" would be able to accompany her and the Express from start to finish.
+                                But she doesn't care. She didn't care when that pretentious blond man left without saying goodbye, just like how she didn't care about her distant homeworld and old friends.
+                                She knows that this journey is lonely. Even if she could get to know like-minded travel companions, even if they showed her generous grace, even if she could witness the end of a complete journey with those companions — that's all just a momentary fluke.
+                                She knows that this journey is lonely. Nobody can follow in the exact same footsteps as anyone else. Nobody can experience for someone else everything that happens along a journey. All she can rely on are her own two eyes and feet.
+                                That's why she stores inside her suitcase all the sights her eyes have witnessed, and all the footprints her feet have left behind.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part III</h3>
+                            <p class="story-text">
+                                Himeko's memory is very good.
+                                The longer the journey gets, the more travel companions she accrues. She can still remember many of them.
+                                She remembers her awkward chit-chats with Pom-Pom, and how the first two passengers aboard the Express were Welt and his blond friend. She remembers how the taciturn Dan Heng defeated the monsters that can swallow stars with just one strike of his lance. She remembers how March 7th had awoken from her icy slumber, all the outfits she'd designed for March, and what March loves the most. She remembers how the Crew arrived at Herta Space Station, how she met Trailblazer, and how they'd embarked on a new journey once more.
+                                She remembers the specifications for every single component of the Express and how they're assembled. She remembers when to oil the Express's bearings and when each plant on the Express needs watering. She remembers Pom-Pom's non-negotiable bottom line, and that Welt has rather juvenile hobbies. She remembers that Dan Heng is always pulling all-nighters to organize the data bank, and how March 7th loves to sleep in. She remembers the personality, habits, hobbies, birthdays, and other anniversary days of everyone aboard the Express. And she remembers much, much more.
+                                The greatest pleasure for Himeko is that everyone can safely reach their destination on the Express.
+                                "Traveling always has an end point. When it happens, I'll smile and say goodbye to everyone."
+                                She always says that, and she'll definitely remember to do that.
+                                It's memory that has formed the road she came from, and memory that will eventually return her to the seas from whence she came.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part IV</h3>
+                            <p class="story-text">
+                                "What a long journey." She says.
+                                "I've been waiting for so, so long."████ looks at her: "It wasn't bad luck that has led you down this path, but wanderlust and curiosity."
+                                "Of course," she smiles, "But I've experienced far less than what you've been through."
+                                "No, I've never experienced the things you have." ████ shakes their head: "There are as many routes as there are pairs of feet."
+                                "Right now, we may be standing in the same place, but we harbor different thoughts and views."
+                                Together, they look up to the stars in silence, and just then saw meteors streaming down: one, two, three... And then more, smaller ones, flickering and flashing ever so finely before a magnificent blaze tore open the night.
+                                A quiet voice disturbs the still air once more: "What do you see?"
+                                "The stars have finished their journey." She says.
+                                ████ laughs: "I, instead, see that their journey is only just beginning."
+                                They do not speak again.
+                                "Let's go back. They're waiting for me."
+                                ████ is silent, then asks: "Has the journey so far made you happy?"
+                                She picks up her suitcase and walks back in the direction of the Express without looking back.
+                                "Same as always."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-scrol="1400" class="character-and-gellary">
+                <div id="Trailblazer" class="character">
+                    <div class="info-with-buttons">
+                        <div class="character-info">
+                            <div class="short-info-and-img">
+                                <div style="background: linear-gradient(180deg,#a35d55,#d0aa6e);" class="contaner-subimg">
+                                    <img src="./img/trailblazer_subImg.webp">
+                                </div>
+                                <div class="short-info">
+                                    <div class="name-and-element">
+                                        <h2 class="character-name">Trailblazer</h2>
+                                        <img class="element" src="./img/physical.png">   
+                                    </div>
+                                    <div class="rarity-and-path">
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                        </div>
+                                        <div class="path">
+                                            <img src="./img/destruction.png">
+                                            <span class="name-of-path">The Destruction</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-tegs">
+                                <div class="teg">Physical</div>
+                                <div class="teg">Astral Express</div>
+                                <div class="teg">The Destruction</div>
+                                <div class="teg">5-Star</div>
+                            </div>
+                            <div class="character-discription">
+                                A boy/girl who boarded the Astral Express.
+                                They chose to travel with the Astral Express to eliminate the dangers posed by the Stellaron.
+                            </div>
+                        </div>
+                        <div class="character-buttons">
+                            <button id="story-button" class="character-button">Story</button>
+                            <a href="#gellaryTrailblazer"><button id="gallery-button" class="character-button">Gallery</button></a>
+                        </div>
+                    </div>
+                    <img class="character-main-img" src="./img/trailblazerMainImg.png">
+                </div>
+                <div id="gellaryTrailblazer" class="gellary" hidden>
+                    <div class="gellary-menu">
+                        <h2 class="title">Gallery</h2>
+                        <i id="closeGallery" class="bi bi-x-lg exit"></i>
+                    </div>
+                     <div class="gallery-imgs">
+                        <img id="gellary-img" src="./img/trailblazerMainImg.png" alt="" srcset="">
+                        <img id="gellary-img" src="./img/trailblazer_gallery2.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/trailblazer_gallery3.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/trailblazer_gallery4.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/trailblazer_gallery5.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/trailblazer_gallery6.gif" alt="" srcset="">
+                     </div>
+                </div>
+                <div class="story-contaner" hidden>
+                    <div class="background-story"></div>
+                    <div class="character-story">
+                        <div class="story-menu">
+                            <h2 class="title">Trailblazer - Story</h2>
+                            <i id="closeStory" class="bi bi-x-lg exit"></i>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">About "You"</h3>
+                            <p class="story-text">
+                                A girl/boy, Trailblazer, decides to travel with the Astral Express to eliminate the threat of the Stellaron.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Your "Story": Part I</h3>
+                            <p class="story-text">
+                                You don't remember much.
+                                You're not from around here, nor did you come from elsewhere. You're not really going anywhere—
+                                Just then, that indistinct voice whispers into your ear. That sorrowful and tender persuasion, that deceptive goading...
+                                The seeds take root. You open your eyes, and the speaker is no longer there.
+                                But there are more and more voices, and they are getting clearer and clearer.
+                                Some give easygoing care, some calmly provide advice, some speak firm support, and some gift gentle direction...
+                                You see the silken thread being woven to form tomorrow.
+                                A huge beast descends from infinity,
+                                golden pupils stare down from the darkness,
+                                and you are no longer abandoned by the past.
+                                You will also set upon a long journey,
+                                and the thorns you have stepped on have become your path.
+                                The train whistles, wishing you a successful journey to the coming future
+                                ...by your own will.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Your "Story": Part II</h3>
+                            <p class="story-text">
+                                You have arrived at the "City of Preservation."
+                                Behind the snow curtain, the wind lashes like steel blades, but the kindling burns on.
+                                Distant lands won't hear them, and the earth trembles in kind, with only the wailing crowds braving the wind.
+                                After facing foreign enemies, the Eternal Freeze, and reality's fissures, a rot begins to fester within the fort.
+                                You try lending a helping hand, but are forsaken.
+                                Some once looked down on you and misunderstood you, but still you stood by their side and helped them find their way.
+                                More care about you and worry about you. They face their suffering, and find the cure for the distressed.
+                                Eventually, they come to your side.
+                                In the ice and snow, you are like a fire, protecting the soul of this world
+                                …Even though you must scorch yourself day and night.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Your "Story": Part III</h3>
+                            <p class="story-text">
+                                The harmonious music guides you to stumble into the sweet dream, as syrup and soda fill your throat.
+                                The festival is grand, the crowd boisterous, and strangers cast on disguises to meet up in the dream.
+                                You view to your hearts' desires the wondrous and otherworldly views, and part ways when dewdrops shimmer with the break of dawn —
+                                When the pitch-black midnight has just begun.
+                                The clock hands go tick-tock, and death follows closely like a shadow.
+                                You are placed onto the table as a bargaining chip, but manage to win for yourself the right to uncover the secret.
+                                You bring with you the dreams of the dead and continue on the road that they did not walk, facing the enemies they could not defeat—
+                                The false god rises in the conglomeration of the multitude's wishes, and the unanimous song of the gazillions drowns out your existence.
+                                Those walking on different roads take up each other's hands,
+                                your melodies interweave with each other, faint but imperishable like the lights in a long night.
+                                One after one, people startle awake from their dream. That tiny song finally merges into a deafening roar in the end, tearing free of the dream's curtains.
+                                The eternal sweet dream scatters in a fleeting instant, and you finally understand why people slumber
+                                — They do so towards a dawn freed from dreams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-scrol="2100" class="character-and-gellary">
+                <div id="Dan_Heng" class="character">
+                    <div class="info-with-buttons">
+                        <div class="character-info">
+                            <div class="short-info-and-img">
+                                <div class="contaner-subimg">
+                                    <img src="./img/Dan_heng_subImg.webp">
+                                </div>
+                                <div class="short-info">
+                                    <div class="name-and-element">
+                                        <h2 class="character-name">Dan Heng</h2>
+                                        <img class="element" src="./img/wind.png">   
+                                    </div>
+                                    <div class="rarity-and-path">
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                        </div>
+                                        <div class="path">
+                                            <img src="./img/hunt.png">
+                                            <span class="name-of-path">The Hunt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-tegs">
+                                <div class="teg">Wind</div>
+                                <div class="teg">Astral Express</div>
+                                <div class="teg">The Hunt</div>
+                                <div class="teg">4-Star</div>
+                            </div>
+                            <div class="character-discription">
+                                A cold and reserved young man who is reticent about his past.
+                                To avoid his kin, he decided to travel with the Astral Express.
+                            </div>
+                        </div>
+                        <div class="character-buttons">
+                            <button id="story-button" class="character-button">Story</button>
+                            <a href="#gellaryDan_Heng"><button id="gallery-button" class="character-button">Gallery</button></a>
+                        </div>
+                    </div>
+                    <img class="character-main-img" src="./img/Dan_heng_mainImg.webp">
+                </div>
+                <div id="gellaryDan_Heng" class="gellary" hidden>
+                    <div class="gellary-menu">
+                        <h2 class="title">Gallery</h2>
+                        <i id="closeGallery" class="bi bi-x-lg exit"></i>
+                    </div>
+                     <div class="gallery-imgs">
+                        <img id="gellary-img" src="./img/Dan_heng_mainImg.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Dan_Hang_gallery2.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Dan_Hang_gallery3.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Dan_Hang_gallery4.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Dan_Hang_gallery5.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/Dan_Hang_gallery6.webp" alt="" srcset="">
+                     </div>
+                </div>
+                <div class="story-contaner" hidden>
+                    <div class="background-story"></div>
+                    <div class="character-story">
+                        <div class="story-menu">
+                            <h2 class="title">Dan Heng - Story</h2>
+                            <i id="closeStory" class="bi bi-x-lg exit"></i>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Details</h3>
+                            <p class="story-text">
+                                A cold and reserved young man who wields a spear known as Cloud-Piercer. He acts as the Express' guard on its long trailblazing expedition.
+                                Dan Heng never talks much about his past. In fact, he joined the Express Crew to escape from a past of his own making.
+                                But can the Express really help him outrun his past?
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part I</h3>
+                            <p class="story-text">
+                                A new dawn begins.
+                                It's just another extremely average day aboard this giant ship. The markets have just opened and the morning dew is still fresh, but the young man crossing the street has never seen such a sight. Before he manages to notice all the differences between the actual city and its descriptions in books, he is immersed in savoring the warmth of the sun on the back of his neck.
+                                It is his first time seeing his own body clearly. This body belongs to him. It belongs to this current name.
+                                When he arrives at the port, the escorting soldier removes the last of his shackles. He walks forward without looking back. He can feel, ever so faintly, several pairs of eyes gazing at him from within the city. Eyes filled with hatred.
+                                It isn't until the spaceship takes off that he turns his head and takes one final look at this place. It really is a magnificent and grand spaceship — just like the books say.
+                                He only glances at it once, then turns his head away to where the stars shimmer dimly and an uncertain future lies.
+                                He looks out in silence.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part II</h3>
+                            <p class="story-text">
+                                A new dawn begins.
+                                He steps off one IPC spaceship, then boards another. He'd never even heard of the ship's destination, but that doesn't matter. There is nowhere he particularly wanted to go. His only goal is to get as far away as possible from his past, from his "home."
+                                On these spaceships, people come and go all the time. None of the IPC crews care who he is, so long as he can work.
+                                He has changed his appearance and might no longer be recognized, but he knows that same power still lurks within him, unable to be shaken off no matter where he goes. This power drags him down, slows him, tries to overwhelm him, and makes him unable to escape his past. He has to be careful.
+                                But he still can't shake off the man with the beastly eyes.
+                                If others in his homeworld felt hatred toward him, then that man only has a killing intent toward him — even the spaceships he had traveled on were all annihilated. That man had died before him, but would reappear soon after.
+                                Outside his homeworld, there's a larger world where anything is possible.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part III</h3>
+                            <p class="story-text">
+                                A new dawn begins.
+                                He boards another spaceship, and the passengers are all wearing different masks. He nearly has his memory stolen, and is forced to listen to a lecture that sounded like mad ramblings.
+                                He knows that huge monsters prowl upon this route, but he could only find a way toward survival by traveling along the most dangerous of roads.
+                                He defeats the huge monsters and disembarks at the next port. He thinks he could remain undetected among the countless ships, but he is stopped by a redhead woman. She salutes him in thanks, saying she is with one of the ships he had rescued.
+                                He is about to turn and leave when he sees a parked train beside the redhead woman.
+                                "Where's your next stop?"
+                                "...Haven't decided yet."
+                                "Then would you like to board our Express?"
+                                "..."
+                                "We're retracing our previous journey. There's so much to see all over again. We need a guard... And an archiver."
+                                "..."
+                                "You can get off any time once you made up your mind on where to go."
+                                "Alright."
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part IV</h3>
+                            <p class="story-text">
+                                A new dawn begins.
+                                He rubs his eyes, realizing it had been too long since he had such a good night's sleep. He considers himself as only staying temporarily and refused the room specially prepared for him, making a simple bed on the floor of the Archives. However, he stayed up all night reading the data bank. At some point, he'd drifted off to sleep.
+                                He opened the door to find the conductor standing there, reprimanding him for staying up late — Otherwise he'd miss out on a piping hot breakfast and would've wasted the care put into it. He nods and the conductor quietens down in satisfaction, wobbling as they lead him into the passenger car.
+                                The redhead woman — who he now knows is named Himeko — flashes him a smile. The brunet man to the other side — Mr. Yang — remains silent despite appearing to have many questions on his mind.
+                                Before he knew it, he'd spent many a morning just like this.
+                                The process of re-visiting the route is not easy, mostly due to the numerous roadblocks caused by Stellaron. Sometimes, they would encounter the huge monsters he'd defeated before. They even found an enormous chunk of floating ice — encased in which was a living girl.
+                                That's why he wasn't very surprised when he detected that the boy/girl named Trailblazer has an actual Stellaron sealed inside his/her body.
+                                The Express's journey will continue on. Is there anything beyond the realm of possibility?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-scrol="2900" class="character-and-gellary">
+                <div id="Welt" class="character">
+                    <div class="info-with-buttons">
+                        <div class="character-info">
+                            <div class="short-info-and-img">
+                                <div style="background: linear-gradient(180deg,#a35d55,#d0aa6e);" class="contaner-subimg">
+                                    <img src="./img/welt_subImg.webp">
+                                </div>
+                                <div class="short-info">
+                                    <div class="name-and-element">
+                                        <h2 class="character-name">Welt</h2>
+                                        <img class="element" src="./img/imaginary.png">   
+                                    </div>
+                                    <div class="rarity-and-path">
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                            <img src="./img/level_star.png" alt="" srcset="">
+                                        </div>
+                                        <div class="path">
+                                            <img src="./img/nihility.png">
+                                            <span class="name-of-path">The Nihility</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="character-tegs">
+                                <div class="teg">Imaginary</div>
+                                <div class="teg">Astral Express</div>
+                                <div class="teg">The Nihility</div>
+                                <div class="teg">5-Star</div>
+                            </div>
+                            <div class="character-discription">
+                                A seasoned member of the Express Crew.
+                                The passion buried in his heart burns anew as he enjoys this fresh adventure.
+                                Occasionally, he would sketch the experiences in a notebook.
+                            </div>
+                        </div>
+                        <div class="character-buttons">
+                            <button id="story-button" class="character-button">Story</button>
+                            <a href="#gellaryWelt"><button id="gallery-button" class="character-button">Gallery</button></a>
+                        </div>
+                    </div>
+                    <img class="character-main-img" src="./img/welt_mainImg.webp">
+                </div>
+                <div id="gellaryWelt" class="gellary" hidden>
+                    <div class="gellary-menu">
+                        <h2 class="title">Gallery</h2>
+                        <i id="closeGallery" class="bi bi-x-lg exit"></i>
+                    </div>
+                     <div class="gallery-imgs">
+                        <img id="gellary-img" src="./img/welt_mainImg.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/welt_gallery2.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/welt_gallery3.gif" alt="" srcset="">
+                        <img id="gellary-img" src="./img/welt_gallery4.webp" alt="" srcset="">
+                        <img id="gellary-img" src="./img/welt_gallery5.webp" alt="" srcset="">
+                     </div>
+                </div>
+                <div class="story-contaner" hidden>
+                    <div class="background-story"></div>
+                    <div class="character-story">
+                        <div class="story-menu">
+                            <h2 class="title">Welt - Story</h2>
+                            <i id="closeStory" class="bi bi-x-lg exit"></i>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Details</h3>
+                            <p class="story-text">
+                                The wise and experienced former Anti-Entropy Sovereign who inherited the name of the world — Welt. He has saved Earth from annihilation time and time again.
+                                After the incident with St. Fountain came to a close, Welt had no choice but to venture with the initiator of the incident to the other side of the portal.
+                                Perhaps even he did not expect the new journey nor companions that awaited him there.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part I</h3>
+                            <p class="story-text">
+                                On the way to the portal, Welt took out a pen and started outlining a sketch. For the eight years prior to that moment, he'd been repeating this job.
+                                Going back further in time, he would construct objects in a different way, as long as the images could be pictured in his mind. But he could never regard that as "creation," because they were just the way the original is. Those had nothing to do with his mind.
+                                This is just the duty of the man who inherited the name of the world. If the world needs him to save it, then he will become that hero without hesitation. He has fallen down many times and been mocked even more, but he will always stand before everyone either in the past or the future — he will never change.
+                                Only now, he finds himself embarking on a new journey.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part II</h3>
+                            <p class="story-text">
+                                When Welt returned to that dangerous cosmic battlefield, he could feel his blood start to boil once more.
+                                Even when his spaceship lost power and was drifting aimlessly through space, he joked casually with his companion: "The end of one adventure is often the beginning of another."
+                                When a passing-by Himeko managed to save them and informed them that they couldn't go back home, he kept up his jokes: "This is like something out of a cartoon, and it's far too coincidental to be real."
+                                Life really is this coincidental.
+                                Since he can't find his way back home and can't live out a peaceful existence for the time being, why doesn't he take up arms again and fight?
+                                This time, there is no burden or destiny to bear. Everything shall obey his own will
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part III</h3>
+                            <p class="story-text">
+                                These days, Welt rarely fights, and it remains unknown whether or not he retains the strength from his heyday. Gravity manipulation has remained his usual combat means, ever since his cane was transformed from the Star of Eden.
+                                He suppresses his enemies with gravity, even creating a kind of mini-black hole — what he considered his everyday powers are met with amazement by the youngsters on the Express.
+                                "Mr. Yang's incredible, amazing!"
+                                "If you need help with anything, Trailblazer, go ask Mr. Yang."
+                                "You need to take turns. Let him rest a little while..."
+                                He is shocked to realize that his carelessness and surety are the results of his countless experiences, marks of the relentless passage of time he had endured. However, the youths aboard the Express are like blank pieces of paper, writing out their own lives.
+                                What kind of responsibilities should he take on in their lives?
+                                He couldn't help but think of the names of people throughout his life who had helped him before.
+                            </p>
+                        </div>
+                        <div class="story">
+                            <h3 class="story-titel">Character Story: Part IV</h3>
+                            <p class="story-text">
+                                — Welt's Log ██/██/████.
+                                ███'s relationship with the protagonists:
+                                █—███'s sparkling personality is just like the protagonist in a cartoon. Go for it!
+                                ███ — A lively youth. I hope she can keep being imaginative, and not feel guilty even if she stumbles. Youths are always going to make mistakes, and ███ will be able to support her.
+                                ██ — A reliable youth. There's no need to worry about him. I hope he can chat more with ███, but if he doesn't want to, then that's fine.
+                                ██ — I can trust this companion with my life, ███ believes she will make the right decision.
+                                ██ — A common character in cartoons. Seemingly just a normal creature, but actually possesses frighteningly powerful abilities and a complicated background.
+                                Note: If I ever get back home, consider making a cartoon out of this.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="contaner_for_img"></div>
+        </section>
+        <section id="Light-Cones-section" class="Light-Cones-section">
+            <div class="Light-Cones-main">
+                <img style="z-index: 0;" class="background-img" src="./img/background3.webp">
+                <div class="wrapper">
+                    <h1 class="main-title">Embark on a journey to the stars</h1>
+                    <div class="light-cones-carousel clear-fix">
+                        <a href="#con-1" style="display: block;">
+                            <div class="carousel-item">
+                                <img class="path-big" src="./img/destruction-light-cones.png">
+                                <div class="light-cones-wraper-info">
+                                    <div class="light-cones-img-div">
+                                        <img class="light-cones-img" src="./img/trailblazer_conus_mainImg.webp" alt="">
+                                        <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                                    </div>
+                                    <div class="light-cones-info">
+                                        <h4 class="light-cones-name">On the Fall of an Aeon</h4>
+                                        <div class="path-and-path-name">
+                                            <img class="path-litle" src="./img/destruction.png">
+                                            <p>The Destruction</p>
+                                        </div>
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                        </div>
+                                        <div class="characteristics">
+                                            <div class="hp">
+                                                <img src="./img/hp.png">
+                                                <span>48</span>
+                                            </div>
+                                            <div class="def">
+                                                <img src="./img/defense.png">
+                                                <span>18</span>
+                                            </div>
+                                            <div class="atk">
+                                                <img src="./img/attack.png">
+                                                <span>24</span>
+                                            </div>
+                                        </div>
+                                        <div class="discription">
+                                            Moth To Flames
+                                            <p>Whenever the wearer attacks, increase their...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#con-2" style="display: block;">
+                            <div class="carousel-item">
+                                <img class="path-big" src="./img/preservation-light-cones.png">
+                                <div class="light-cones-wraper-info">
+                                    <div class="light-cones-img-div">
+                                        <img class="light-cones-img" src="./img/march_7th_conus_mainImg.webp" alt="">
+                                        <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                                    </div>
+                                    <div class="light-cones-info">
+                                        <h4 class="light-cones-name">Day One of My New Life</h4>
+                                        <div class="path-and-path-name">
+                                            <img class="path-litle" src="./img/preservation.png">
+                                            <p>The Preservation</p>
+                                        </div>
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                        </div>
+                                        <div class="characteristics">
+                                            <div class="hp">
+                                                <img src="./img/hp.png">
+                                                <span>43</span>
+                                            </div>
+                                            <div class="def">
+                                                <img src="./img/defense.png">
+                                                <span>21</span>
+                                            </div>
+                                            <div class="atk">
+                                                <img src="./img/attack.png">
+                                                <span>16</span>
+                                            </div>
+                                        </div>
+                                        <div class="discription">
+                                            At This Very Moment
+                                            <p>Increases the wearer's DEF by <span style="color: rgb(255, 200, 112);">16%/18%/20</span>...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#con-3" style="display: block;">
+                            <div class="carousel-item">
+                                <img class="path-big" src="./img/erudition-light-cones.png">
+                                <div class="light-cones-wraper-info">
+                                    <div class="light-cones-img-div">
+                                        <img class="light-cones-img" src="./img/Himeko_conus_mainImg.webp" alt="">
+                                        <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                                    </div>
+                                    <div class="light-cones-info">
+                                        <h4 class="light-cones-name">Night on the Milky Way</h4>
+                                        <div class="path-and-path-name">
+                                            <img class="path-litle" src="./img/erudition.png">
+                                            <p>The Erudition</p>
+                                        </div>
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                        </div>
+                                        <div class="characteristics">
+                                            <div class="hp">
+                                                <img src="./img/hp.png">
+                                                <span>52</span>
+                                            </div>
+                                            <div class="def">
+                                                <img src="./img/defense.png">
+                                                <span>18</span>
+                                            </div>
+                                            <div class="atk">
+                                                <img src="./img/attack.png">
+                                                <span>26</span>
+                                            </div>
+                                        </div>
+                                        <div class="discription">
+                                            Meteor Swarm
+                                            <p>For every enemy on the...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#con-4" style="display: block;">
+                            <div class="carousel-item">
+                                <img class="path-big" src="./img/hunt-light-cones.png">
+                                <div class="light-cones-wraper-info">
+                                    <div class="light-cones-img-div">
+                                        <img class="light-cones-img" src="./img/dan-heng_conus_mainImg.webp" alt="">
+                                        <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                                    </div>
+                                    <div class="light-cones-info">
+                                        <h4 class="light-cones-name">Only Silence Remains</h4>
+                                        <div class="path-and-path-name">
+                                            <img class="path-litle" src="./img/hunt.png">
+                                            <p>The Hunt</p>
+                                        </div>
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                        </div>
+                                        <div class="characteristics">
+                                            <div class="hp">
+                                                <img src="./img/hp.png">
+                                                <span>43</span>
+                                            </div>
+                                            <div class="def">
+                                                <img src="./img/defense.png">
+                                                <span>15</span>
+                                            </div>
+                                            <div class="atk">
+                                                <img src="./img/attack.png">
+                                                <span>21</span>
+                                            </div>
+                                        </div>
+                                        <div class="discription">
+                                            Record
+                                            <p>Increases the wearer's ATK by <span style="color: rgb(255, 200, 112);">16%/20%/24</span>...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#con-5" style="display: block;">
+                            <div class="carousel-item">
+                                <img class="path-big" src="./img/nihility-light-cones.png">
+                                <div class="light-cones-wraper-info">
+                                    <div class="light-cones-img-div">
+                                        <img class="light-cones-img" src="./img/Welt_conus_mainImg.webp" alt="">
+                                        <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                                    </div>
+                                    <div class="light-cones-info">
+                                        <h4 class="light-cones-name">In the Name of the World</h4>
+                                        <div class="path-and-path-name">
+                                            <img class="path-litle" src="./img/nihility.png">
+                                            <p>The Nihility</p>
+                                        </div>
+                                        <div class="rarity">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                            <img src="./img/level_star.png">
+                                        </div>
+                                        <div class="characteristics">
+                                            <div class="hp">
+                                                <img src="./img/hp.png">
+                                                <span>48</span>
+                                            </div>
+                                            <div class="def">
+                                                <img src="./img/defense.png">
+                                                <span>21</span>
+                                            </div>
+                                            <div class="atk">
+                                                <img src="./img/attack.png">
+                                                <span>26</span>
+                                            </div>
+                                        </div>
+                                        <div class="discription">
+                                            Inheritor
+                                            <p>Increases the wearer's DMG to debuffed ene...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="Light-Coneses">
+                <div>
+                    <div id="con-1" class="light-cones">
+                        <div class="conuse-wrapper">
+                            <div class="light-cones-img-div">
+                                <img class="light-cones-img" src="./img/trailblazer_conus_mainImg.webp" alt="">
+                                <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                            </div>
+                            <div class="discription">
+                                <h2 class="light-cones-name">On the Fall of an Aeon</h2>
+                                <div class="tegs">
+                                    <div>The Destruction</div>
+                                    <div>ATK</div>
+                                    <div>Simulated Universe</div>
+                                    <div>5-Star</div>
+                                </div>
+                                <p>
+                                    It began with a flash of light.
+                                    One by one, they fell as the threat of expiration loomed over them.
+                                    They had to stop self-replicating and rushed to embrace each other,
+                                    Trying to offer the right to reproduce in exchange for a possibility of survival.
+                                    They held hands in a show of unprecedented unity.
+                                    ...But the Paths met an abrupt end,
+                                    And they were headed to a true death.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Basic-Info">
+                            <h2>Basic Info</h2>
+                            <div class="name-and-path">
+                                <div class="name-div">
+                                    <span>Name</span>
+                                    <p>On the Fall of an Aeon</p>
+                                </div><!--
+                                --><div class="path-div">
+                                    <span>Path</span>
+                                    <p>The Destruction</p>
+                                </div>
+                            </div>
+                            <div class="feature-div">
+                                <span class="feature-name">Moth To Flames</span>
+                                <p>Whenever the wearer attacks, increase their ATK by <span>8%/10%/12%/14%/16%</span> in this battle, up to 4 time(s). When the wearer inflicts Weakness Break on enemies, the wearer's DMG increases by <span>12%/15%/18%/21%/24%</span> for 2 turn(s).</p>
+                            </div>
+                            <div class="characteristics">
+                                <div class="hp">
+                                    <img src="./img/hp.png">
+                                    <span>48</span>
+                                </div><!--
+                                --><div class="def">
+                                    <img src="./img/defense.png">
+                                    <span>18</span>
+                                </div><!--
+                                --><div class="atk">
+                                    <img src="./img/attack.png">
+                                    <span>24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 100px; border-top: #ffffff14 1px solid; margin-top: 100px;">
+                    <div id="con-2" class="light-cones">
+                        <div class="conuse-wrapper">
+                            <div class="light-cones-img-div">
+                                <img class="light-cones-img" src="./img/march_7th_conus_mainImg.webp" alt="">
+                                <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                            </div>
+                            <div class="discription">
+                                <h2 class="light-cones-name">Day One of My New Life</h2>
+                                <div class="tegs">
+                                    <div>The Preservation</div>
+                                    <div>DEF</div>
+                                    <div>Regular Warp</div>
+                                    <div>4-Star</div>
+                                </div>
+                                <p>
+                                    "So happy I got to see Pom-Pom in new clothes today! I like it~"
+                                    "Today's my birthday! I'm still as cute as ever."
+                                    "Today, I finally finally finally have a junior! Isn't that right?"
+                                    We click the shutter many times without thinking.
+                                    Do we do that to capture the happiness at that moment?
+                                    Or to capture ourselves at that moment?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Basic-Info">
+                            <h2>Basic Info</h2>
+                            <div class="name-and-path">
+                                <div class="name-div">
+                                    <span>Name</span>
+                                    <p>Day One of My New Life</p>
+                                </div><!--
+                                --><div class="path-div">
+                                    <span>Path</span>
+                                    <p>The Preservation</p>
+                                </div>
+                            </div>
+                            <div class="feature-div">
+                                <span class="feature-name">At This Very Moment</span>
+                                <p>Increases the wearer's DEF by <span>16%/18%/20%/22%/24%</span>. After entering battle, increases DMG RES of all allies by <span>8%/9%/10%/11%/12%</span>. Effects of the same type cannot stack.</p>
+                            </div>
+                            <div class="characteristics">
+                                <div class="hp">
+                                    <img src="./img/hp.png">
+                                    <span>43</span>
+                                </div><!--
+                                --><div class="def">
+                                    <img src="./img/defense.png">
+                                    <span>21</span>
+                                </div><!--
+                                --><div class="atk">
+                                    <img src="./img/attack.png">
+                                    <span>16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 100px; border-top: #ffffff14 1px solid; margin-top: 100px;">
+                    <div id="con-3" class="light-cones">
+                        <div class="conuse-wrapper">
+                            <div class="light-cones-img-div">
+                                <img class="light-cones-img" src="./img/Himeko_conus_mainImg.webp" alt="">
+                                <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                            </div>
+                            <div class="discription">
+                                <h2 class="light-cones-name">Night on the Milky Way</h2>
+                                <div class="tegs">
+                                    <div>The Erudition</div>
+                                    <div>ATK</div>
+                                    <div>Regular Warp</div>
+                                    <div>5-Star</div>
+                                </div>
+                                <p>
+                                    If you are concerned for the road, just look up again.
+                                    When the stars look gently down, the heart would already be soaring.
+                                    Every thought and every whisper,
+                                    becomes a life experience that would never leave.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Basic-Info">
+                            <h2>Basic Info</h2>
+                            <div class="name-and-path">
+                                <div class="name-div">
+                                    <span>Name</span>
+                                    <p>Night on the Milky Way</p>
+                                </div><!--
+                                --><div class="path-div">
+                                    <span>Path</span>
+                                    <p>The Erudition</p>
+                                </div>
+                            </div>
+                            <div class="feature-div">
+                                <span class="feature-name">Meteor Swarm</span>
+                                <p>For every enemy on the field, increases the wearer's ATK by <span>9%/10.5%/12%/13.5%/15%</span>, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by <span>30%/35%/40%/45%/50%</span> for 1 turn.</p>
+                            </div>
+                            <div class="characteristics">
+                                <div class="hp">
+                                    <img src="./img/hp.png">
+                                    <span>52</span>
+                                </div><!--
+                                --><div class="def">
+                                    <img src="./img/defense.png">
+                                    <span>18</span>
+                                </div><!--
+                                --><div class="atk">
+                                    <img src="./img/attack.png">
+                                    <span>26</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 100px; border-top: #ffffff14 1px solid; margin-top: 100px;">
+                    <div id="con-4" class="light-cones">
+                        <div class="conuse-wrapper">
+                            <div class="light-cones-img-div">
+                                <img class="light-cones-img" src="./img/dan-heng_conus_mainImg.webp" alt="">
+                                <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                            </div>
+                            <div class="discription">
+                                <h2 class="light-cones-name">Only Silence Remains</h2>
+                                <div class="tegs">
+                                    <div>The Hunt</div>
+                                    <div>ATK</div>
+                                    <div>Regular Warp</div>
+                                    <div>4-Star</div>
+                                </div>
+                                <p>
+                                    "Shouldn't we get off? It's our stop."
+                                    A chuckle came from above. His eyes moved, but he didn't look up.
+                                    "To be clear, March always says you're expressionless, but I don't agree."
+                                    "The train's data bank show traces of an update, but the results weren't saved."
+                                    "So... which entry were you having trouble with?"
+                                    He grasped his pen tighter as he looked at the bloody scene drawn in the notebook from memory.
+                                    "I see. It was the one about you..."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Basic-Info">
+                            <h2>Basic Info</h2>
+                            <div class="name-and-path">
+                                <div class="name-div">
+                                    <span>Name</span>
+                                    <p>Only Silence Remains</p>
+                                </div><!--
+                                --><div class="path-div">
+                                    <span>Path</span>
+                                    <p>The Hunt</p>
+                                </div>
+                            </div>
+                            <div class="feature-div">
+                                <span class="feature-name">Record</span>
+                                <p>Increases the wearer's ATK by <span>16%/20%/24%/28%/32%</span>. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by <span>12%/15%/18%/21%/24%</span>.</p>
+                            </div>
+                            <div class="characteristics">
+                                <div class="hp">
+                                    <img src="./img/hp.png">
+                                    <span>43</span>
+                                </div><!--
+                                --><div class="def">
+                                    <img src="./img/defense.png">
+                                    <span>15</span>
+                                </div><!--
+                                --><div class="atk">
+                                    <img src="./img/attack.png">
+                                    <span>21</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 100px; border-top: #ffffff14 1px solid; margin-top: 100px;">
+                    <div id="con-5" class="light-cones">
+                        <div class="conuse-wrapper">
+                            <div class="light-cones-img-div">
+                                <img class="light-cones-img" src="./img/Welt_conus_mainImg.webp" alt="">
+                                <img class="light-cones-img-wrapper" src="./img/conus_wrapper.png" alt="">
+                            </div>
+                            <div class="discription">
+                                <h2 class="light-cones-name">In the Name of the World</h2>
+                                <div class="tegs">
+                                    <div>The Nihility</div>
+                                    <div>ATK</div>
+                                    <div>Regular Warp</div>
+                                    <div>5-Star</div>
+                                </div>
+                                <p>
+                                    "Welt...?"
+                                    "It's a... great name, right?"
+                                    "Then..."
+                                    "From now on, you are Welt."
+                                    "This Herrscher core... and the mission to protect the world..."
+                                    "I'll leave them to you, Welt."
+                                </p>
+                            </div>
+                        </div>
+                        <div class="Basic-Info">
+                            <h2>Basic Info</h2>
+                            <div class="name-and-path">
+                                <div class="name-div">
+                                    <span>Name</span>
+                                    <p>In the Name of the World</p>
+                                </div><!--
+                                --><div class="path-div">
+                                    <span>Path</span>
+                                    <p>The Nihility</p>
+                                </div>
+                            </div>
+                            <div class="feature-div">
+                                <span class="feature-name">Inheritor</span>
+                                <p>Increases the wearer's DMG to debuffed enemies by <span>24%/28%/32%/36%/40%</span>. When the wearer uses their Skill, the Effect Hit Rate for this attack increases by <span>18%/21%/24%/27%/30%</span>, and ATK increases by <span>24%/28%/32%/36%/40%</span>.</p>
+                            </div>
+                            <div class="characteristics">
+                                <div class="hp">
+                                    <img src="./img/hp.png">
+                                    <span>48</span>
+                                </div><!--
+                                --><div class="def">
+                                    <img src="./img/defense.png">
+                                    <span>18</span>
+                                </div><!--
+                                --><div class="atk">
+                                    <img src="./img/attack.png">
+                                    <span>24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="locations" class="locations">
+            <div class="locations-main">
+                <img class="background" src="./img/worlds.jpg">
+                <div class="worlds">
+                    <a href="#space_station_Herta"><img src="./img/space_station_Herta.png"></a>
+                    <a href="#Jarilo-VI"><img src="./img/World_Jarilo-VI.webp"></a>
+                    <a href="#Xianzhou_Luofu"><img src="./img/World_The_Xianzhou_Luofu.webp"></a>
+                    <a href="#Penacony"><img src="./img/World_Penacony.webp"></a>
+                    <a href="#Ampforeus"><img src="./img/Ampforeus.png"></a>
+                </div>
+            </div>
+            <div class="locations-wrappwer">
+                <div id="space_station_Herta" class="location">
+                    <div class="location-info">
+                        <div class="location-text-info">
+                            <div class="icon-and-name">
+                                <img src="./img/Herta_Space_Station_icon.webp">
+                                <h2>Herta Space Station</h2>
+                            </div>
+                            <div class="tegs">
+                                <div>Location</div>
+                            </div>
+                            <div class="discription">
+                                <p>Not content with the laws of the common world. Herta of the Genius Society set her sights on the unexplained existences of the galaxy, expecting those distant mysteries to satisfy her curiosity. To this end, Herta led the establishment of a museum-like starship and launched it into orbit, starting the research to "seal all strange existences amount the stars." That was how the famous Herta Space Station was born.</p>
+                                <p>Nowadays, the space station possesses innumerable Curios and is a veritable space museum. A great number of researchers also live on the station. They continuously collect relics and Curios all over the galaxy, record their appearances and functions, establish systematic methods to observe and study them... ultimately finding even more confounding enigmas from their studies. That in fact, was Herta's initial goal.</p>
+                                <p>This large "collection" often attracts jealous eyes. Various forces watch from the shadows. Due to Herta's power, the space station had rarely experienced a real crisis, and the collection and investigation work continues to operate in an orderly manner.</p>
+                            </div>
+                        </div>
+                        <img class="map" src="./img/Herta_Space_Station_map.webp">
+                    </div>
+                    <div class="gellary">
+                        <h2>Gallery</h2>
+                        <div class="gellary-imgs">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery2.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery3.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery4.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery5.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery6.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery7.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery8.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery9.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery10.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery111.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery12.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery13.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery14.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery15.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery16.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery17.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery18.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery20.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery21.webp">
+                            <img id="gellary-img" src="./img/Herta_Space_Station_gallery22.webp">
+                        </div>
+                    </div>
+                </div>
+                <div id="Jarilo-VI" class="location">
+                    <div class="location-info">
+                        <div class="location-text-info">
+                            <div class="icon-and-name">
+                                <img src="./img/Jarilo-VI_icon.webp">
+                                <h2>Jarilo-VI</h2>
+                            </div>
+                            <div class="tegs">
+                                <div>Location</div>
+                            </div>
+                            <div class="discription">
+                                <p>Historians often start the planetary history of Jarilo-VI from the War of the Gods thousands of years ago. The war between the eleven Perun States and the Veles Union Army scorched the land for years until an early spring completely changed the fortunes of war, and the Veles had a total victory. They praised the spring war god Jarilo for helping them eliminate their arch enemy, and praised the land with poems of the same name. The current name of the plant in the galaxy's records - Jarilo-VI - may be a mistranslation that contains a poetry stanza number.</p>
+                                <p>When the mythological war was over, Jarilo-VI welcomed a long period of peace and developed from a hunter-gather society to one conducting space explorations. Unfortunately, Jarilo-VI was a planet with a few resources. Intensive development brought top-tier technological advances to Jarilo-VI, but also brought an end to their history. Exhausted resources, the arrival of a Stellaron, and the appearance of the Eternal Freeze... These various disasters completely annihilated Jarilo-VI's glorious but short-lived civilization.</p>
+                                <p>The survivors of the Eternal Freeze managed to stay alive in a corner of the planet. They forgot the old name of Jarilo and created Belobog, a city made to shelter against the Eternal Freeze, and continued their civilization. Due to its isolated and dangerous natural environment. Jarilo-VI lost contact with other worlds after the appearance of the Cancer of All Worlds.</p>
+                            </div>
+                        </div>
+                        <img class="map" src="./img/Jarilo-VI_map.webp">
+                    </div>
+                    <div class="gellary">
+                        <h2>Gallery</h2>
+                        <div class="gellary-imgs">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery2.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery3.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery4.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery5.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery6.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery7.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery8.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery9.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery10.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery11.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery12.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery13.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery14.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery15.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery16.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery17.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery18.webp">
+                            <img id="gellary-img" src="./img/Jarilo-VI_gallery19.webp">
+                        </div>
+                    </div>
+                </div>
+                <div id="Xianzhou_Luofu" class="location">
+                    <div class="location-info">
+                        <div class="location-text-info">
+                            <div class="icon-and-name">
+                                <img src="./img/Xianzhou_Luofu_icon.webp">
+                                <h2>Xianzhou Luofu</h2>
+                            </div>
+                            <div class="tegs">
+                                <div>Location</div>
+                            </div>
+                            <div class="discription">
+                                <p>Xianzhou Luofu is one of the six flagships of the Xianzhou Alliance. It sails in the endless ocean of stars like a one-way arrow, shooting toward the destined enemy of the Lord of The Hunt.</p>
+                                <p>After the war with the Denizens of Abundance, the Luofu traveled between densely populated interstellar regions, trading and conducting cultural exchange between different worlds. They signed agreements with the Interastral Peace Corporation, and helped many worlds ravaged by the Denizens of Abundances to rebuild their ecosystem. People arrived at the Luofu to seek medical treatment, study, and trade, with throngs of visitors filling the docks.</p>
+                                <p>Though warfare has receded, the Luofu has not relaxed its watch against the Denizens of Abundance. The starskiffs of the Cloud Knights would head to planets that went out of contact to seek information, while the Xianzhou Ten-Lords Commission remains on guard for any Elixir Seeker pursuing everlasting life - The desire for immortality is the beginning of all tragedies. The Xianzhou will not allow any younger civilizations to walk its old path.</p>
+                            </div>
+                        </div>
+                        <img class="map" src="./img/Xianzhou_Luofu_map.webp">
+                    </div>
+                    <div class="gellary">
+                        <h2>Gallery</h2>
+                        <div class="gellary-imgs">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery2.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery3.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery4.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery5.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery6.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery7.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery8.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery9.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery10.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery11.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery12.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery13.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery14.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery15.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery16.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery17.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery18.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery19.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery20.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery21.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery22.webp">
+                            <img id="gellary-img" src="./img/Xianzhou_Luofu_gallery23.webp">
+                        </div>
+                    </div>
+                </div>
+                <div id="Penacony" class="location">
+                    <div class="location-info">
+                        <div class="location-text-info">
+                            <div class="icon-and-name">
+                                <img src="./img/Penacony_icon.webp">
+                                <h2>Penacony</h2>
+                            </div>
+                            <div class="tegs">
+                                <div>Location</div>
+                            </div>
+                            <div class="discription">
+                                <p>The Planet of Festivities in the Asdana star system, also known as Land of the Dreams. A luxurious hotel positioned above the fathomless sky, Penacony is also a popular vacation spot where interstellar celebrities party the days away and the affluent from diverse words revel in lavish ventures. People flock here in search of dreams they've longed for or have already buried, and through Dreampools in the hotel are transported to a realm of dreams where everything can come true.</p>
+                                <p>Rarely do guests pay attention to Penacony's heavy past. A millennium ago, it was a frontier prison established by the IPC. Exiled prisoners must survive an arduous journey across vast distances to reach this location, and are then forced to take up a dangerous duty: To mend the physical leak through which memoria seeps into the galaxy. As they frequently labor while being exposed to memoria, the prisoners gradually discovered themselves entering a captivating shared dream world, where they collectively obtained a single shared desire: freedom.</p>
+                                <p>After the eruption of the Cancer of All Worlds, the ownership of the Frontier Prison changed hands. Historical records related to this struggle are scarce and often questionable. However, some accounts clearly state that with the assistance of various factions — including the Mourning Actors, the Masked Fools, the Nameless, and the Omen Vanguards — the prisoners emerged as the new rulers of this nascent realm. Sounds of discord could then periodically be heard during the subsequent times when it became a land of exiles. It was only when The Family descended and took control of the Dreamscape that Penacony experienced unparalleled and explosive prosperity, transforming into a renowned cosmic resort.</p>
+                            </div>
+                        </div>
+                        <img class="map" src="./img/Penacony_map.webp">
+                    </div>
+                    <div class="gellary">
+                        <h2>Gallery</h2>
+                        <div class="gellary-imgs">
+                            <img id="gellary-img" src="./img/Penacony_gallery.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery2.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery3.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery4.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery5.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery6.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery7.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery8.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery9.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery10.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery11.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery12.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery13.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery14.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery15.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery16.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery17.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery18.png">
+                            <img id="gellary-img" src="./img/Penacony_gallery19.png">
+                        </div>
+                    </div>
+                </div>
+                <div id="Ampforeus" class="location" style="border: none;">
+                    <div class="location-info">
+                        <div class="location-text-info">
+                            <div class="icon-and-name">
+                                <img src="./img/Amphoreus_icon.webp">
+                                <h2>Amphoreus</h2>
+                            </div>
+                            <div class="tegs">
+                                <div>Location</div>
+                            </div>
+                            <div class="discription">
+                                <p>Amphoreus, The Eternal Land is a segmentum hidden deep in the cosmos. It is severed from the outside and is difficult for anyone to detect or encounter. Standard interstellar navigation can barely perceive its existence, let alone pass through or arrive at the world itself.</p>
+                                <p>Akivili the Trailblaze had traversed myriad worlds, pioneered into unknown lands, and connected countless worlds. For THEIR followers, exploring the edge of the unknown in the depths of the Cosmos is their paramount duty. Using the special technology from the Garden, "Garden of Recollection's Mirror," the Astral Express will arrive at Amphoreus for the first time to initiate their trailblazing journey and tries their best to reveal the truth behind the Three Paths.</p>
+                            </div>
+                        </div>
+                        <img class="map" src="./img/Amphoreus_map.webp">
+                    </div>
+                    <div class="gellary">
+                        <h2>Gallery</h2>
+                        <div class="gellary-imgs">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery2.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery3.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery4.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery5.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery6.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery7.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery8.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery9.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery10.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery11.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery12.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery13.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery14.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery15.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery16.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery17.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery188.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery19.webp">
+                            <img id="gellary-img" src="./img/Amphoreus_gallery20.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let storyButtons = document.querySelectorAll("#story-button");
+            for (let i = 0; i < storyButtons.length; i++) {
+                storyButtons[i].addEventListener("click", showStory);
+            }
+            let closeStoryButtons = document.querySelectorAll("#closeStory");
+            for (let i = 0; i < closeStoryButtons.length; i++) {
+                closeStoryButtons[i].addEventListener("click", closeStory);
+            }
+            function showStory(){
+                this.parentElement.parentElement.parentElement.parentElement.querySelector(".story-contaner").hidden = false;
+                window.scrollTo(0, document.scrollHeight)
+                document.querySelector("html").style.overflow = "hidden";
+            }
+            function closeStory(){
+                window.scrollTo(0, this.parentElement.parentElement.parentElement.parentElement.scrollHeight + +this.parentElement.parentElement.parentElement.parentElement.dataset.scrol)
+                this.parentElement.parentElement.parentElement.hidden = true;
+                document.querySelector("html").style.overflow = "auto";
+                
+            }
+        </script>
+        <script>
+            let galleryButtons = document.querySelectorAll("#gallery-button");
+            for (let i = 0; i < galleryButtons.length; i++) {
+                galleryButtons[i].addEventListener("click", showGallery);
+            }
+            let closegalleryButtons = document.querySelectorAll("#closeGallery");
+            for (let i = 0; i < closegalleryButtons.length; i++) {
+                closegalleryButtons[i].addEventListener("click", closeGallery);
+            }
+            function showGallery(){
+                this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector(".gellary").hidden = false;
+            }
+            function closeGallery(){
+                this.parentElement.parentElement.hidden = true;
+            }
+        </script>
+        <script>
+            let imgs = document.querySelectorAll("#gellary-img");
+            for (let i = 0; i < imgs.length; i++) {
+                imgs[i].addEventListener("click", lookImg);
+            }
+            
+            function lookImg() {
+                let container = document.querySelector(".contaner_for_img");
+                container.innerHTML = '';
+                
+                let enlargedImg = new Image();
+                enlargedImg.src = this.src;
+                enlargedImg.style.maxWidth = "90vw";  
+                enlargedImg.style.maxHeight = "90vh"; 
+                enlargedImg.style.objectFit = "contain"; 
+                enlargedImg.style.position = "fixed";
+                enlargedImg.style.top = "50%";
+                enlargedImg.style.left = "50%";
+                enlargedImg.style.transform = "translate(-50%, -50%)";
+                enlargedImg.style.zIndex = "100000000";
+                
+                
+                let overlay = document.createElement("div");
+                overlay.style.position = "fixed";
+                overlay.style.top = "0";
+                overlay.style.left = "0";
+                overlay.style.width = "100%";
+                overlay.style.height = "100%";
+                overlay.style.backgroundColor = "rgba(0,0,0,0.7)";
+                overlay.style.zIndex = "99999999";
+                overlay.style.cursor = "zoom-out";
+                
+                overlay.addEventListener("click", function() {
+                    document.body.removeChild(overlay);
+                    document.body.removeChild(enlargedImg);
+                    document.body.style.overflow = 'auto'
+                });
+                
+                document.body.appendChild(overlay);
+                document.body.appendChild(enlargedImg);
+                document.body.style.overflow = 'hidden'
+            }
+        </script>
+    </main>
+    <footer>
+        <a href="https://web.telegram.org/k/"><img src="./img/Telegram_Logo.png"></a>
+        <a href="https://www.hoyolab.com"><img src="./img/hoyolab-logo2.png"></a>
+        <a href="https://vk.com/"><img src="./img/vk.png"></a>
+        <a href="https://github.com/"><img style="height: 35px; width: auto;" src="./img/github_logo.webp"></a>
+    </footer>
+</body>
+</html>

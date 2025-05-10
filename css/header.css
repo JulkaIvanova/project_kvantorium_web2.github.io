@@ -1,0 +1,102 @@
+header{
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    position: fixed;
+    width: 100%;
+    right: 0; left: 0;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo{
+    height: 70px;
+    width: auto;
+}
+
+header .logo-text {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #85bfee, #445da7, #e1ca9c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .logo-contaner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo-contaner .logo-and-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+}
+
+header .nav-menu a{
+    color: white;
+}
+
+header .nav-menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+header .nav-menu li{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid transparent;
+    font-family: Kanit;
+}
+header .text-and-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header .nav-menu li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #e1ca9c;
+}
+
+@media screen and (max-width: 1000px) {
+    header .logo-contaner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    header .logo-contaner .logo-and-text{
+        width: 100%;
+    }
+    header .nav-menu li{
+        display: block;
+    }
+    header .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+    }
+    header .nav-menu{
+        display: none;
+    }
+
+    .mobile-menu-btn{
+        display: block;
+    }
+}

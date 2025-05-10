@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    overflow:hidden;
+    cursor: url("/img/cursor.png") 4 2,auto;
+}
+
+/* * { outline: 1px solid red; } */
+
+img{
+    max-width: none !important;
+}
+
+main{
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+html{
+    scrollbar-color: #ffffff1f #0f172b;
+    scrollbar-width: thin;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
