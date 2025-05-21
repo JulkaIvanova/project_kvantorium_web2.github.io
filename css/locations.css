@@ -153,7 +153,8 @@ main .locations .locations-wrappwer .location .location-info .location-text-info
 }
 
 main .locations .locations-wrappwer .location .location-info .map{
-    width: 640px; height: 640px;
+    max-width: 640px !important;
+    height: 640px;
     display: inline-block;
 }
 
